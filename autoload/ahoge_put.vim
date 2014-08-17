@@ -26,6 +26,14 @@ let g:ahoge_put_sections.thd = get(g:ahoge_put_sections, 'thd', [
 " Functions {{{
 
 function! ahoge_put#put()
+	if !has('reltime')
+		echohl Error
+		echo 'You not has option +reltime.'
+		echo 'This Plugin required +reltime.'
+		echohl None
+		return
+	endif
+
 	let l:fst = s:select_item(g:ahoge_put_sections['fst'])
 	let l:snd = s:select_item(g:ahoge_put_sections['snd'])
 	let l:thd = s:select_item(g:ahoge_put_sections['thd'])
