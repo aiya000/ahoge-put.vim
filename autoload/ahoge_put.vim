@@ -9,16 +9,33 @@ set cpo&vim
 let g:ahoge_put_sections = get(g:, 'ahoge_put_sections', {})
 
 let g:ahoge_put_sections.fst = get(g:ahoge_put_sections, 'fst', [
-\	'ゆかりさんは',
-\	'マキさんは'
+\	'このアホ毛は',
+\	'とりあえず',
+\	'あなたのVimは',
+\	'あなたは'
 \])
 let g:ahoge_put_sections.snd = get(g:ahoge_put_sections, 'snd', [
 \	'ぺったんこな',
-\	'粘土をよく食べる'
+\	'粘土をよく食べる',
+\	'座敷童みたいな',
+\	'よく銅像を磨いている',
+\	'とりあえず',
+\	'ちょっとおもしろい漢字の',
+\	'ペヤングだばぁした',
+\	'便利な',
+\	'☆Happy Vimming☆'
 \])
 let g:ahoge_put_sections.thd = get(g:ahoge_put_sections, 'thd', [
 \	'爆発狂だ',
-\	'ギター担当だ'
+\	'ギター担当だ',
+\	'萌え担当だ',
+\	'人間だ',
+\	'変な動物だ',
+\	'熊本城だ',
+\	'アホ毛付きだ',
+\	'力士だ',
+\	'炭酸ジュースだ',
+\	'メイドさんだ'
 \])
 
 " }}}
