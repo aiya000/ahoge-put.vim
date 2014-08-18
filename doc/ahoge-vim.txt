@@ -63,6 +63,10 @@ VARIABLES                       *ahoge-put-variables*
 
 |g:ahoge_put_sections|
 ランダムな文字列を格納するセクション3つを格納するディクショナリです。
+ランダム文字列はこのディクショナリの
+['fst'] . ['snd'] . ['thd']
+という形でputされます。
+
 
 デフォルト値:
 "{
