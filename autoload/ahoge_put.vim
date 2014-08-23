@@ -12,7 +12,8 @@ let g:ahoge_put_sections.fst = get(g:ahoge_put_sections, 'fst', [
 \	'このアホ毛は',
 \	'とりあえず',
 \	'あなたのVimは',
-\	'あなたは'
+\	'あなたは',
+\   'このほげ太郎も'
 \])
 let g:ahoge_put_sections.snd = get(g:ahoge_put_sections, 'snd', [
 \	'ぺったんこな',
@@ -55,10 +56,7 @@ function! ahoge_put#put()
 	let l:snd = s:select_item(g:ahoge_put_sections['snd'])
 	let l:thd = s:select_item(g:ahoge_put_sections['thd'])
 
-	let l:b = @+
-	let @+ = l:fst . l:snd . l:thd
-	execute 'normal "+p'
-	let @+ = l:b
+    execute 'normal a' . l:fst . l:snd . l:thd
 endfunction
 
 function! s:select_item(itemList)
